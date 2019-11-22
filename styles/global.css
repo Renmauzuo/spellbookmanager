@@ -1,0 +1,47 @@
+div.container {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 1em;
+}
+
+#spellbook-list-container {
+	width: calc(20% - 2em);
+}
+
+#spellbook-list, #spellbook-setup {
+	margin-top: 1em;
+}
+
+#spellbook-list a {
+	display: block;
+	margin-bottom: 8px;
+}
+
+#spellbook-info-container {
+	width: calc(40% - 2em);
+}
+
+#spellbook-comparison-container {
+	width: calc(39% - 2em);
+}
+
+#spell-list {
+	overflow: hidden;
+}
+
+input {
+	margin-bottom: 1em;
+}
+
+p, h3 {
+	margin-top: 0;
+}
+
+button {
+	margin: 1em 0;
+	display: block;
+}
+
+ul {
+	padding-left: 1em;
+}

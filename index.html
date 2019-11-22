@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Spellbook Manager</title>
+	<link rel="stylesheet" type="text/css" href="styles/global.css">
+</head>
+<body>
+	<div id="spellbook-list-container" class="container">
+		<h2>Spellbooks</h2>
+		<button id="button-add-spellbook">Add New Spellbook</button>
+		<button id="button-export-all">Export All (to clipboard)</button>
+		<button id="button-import">Import</button>
+		<div id="spellbook-list"></div>
+	</div> 
+	<div id="spellbook-info-container" class="container">
+		<h2>Spellbook Info</h2>
+		<button id="button-export-current">Export (to clipboard)</button>
+		<button id="button-delete">Delete Current Spellbook</button>
+		<button class="button-toggle" data-target="#spellbook-setup">Toggle Setup</button>
+		<div id="spellbook-setup">
+			Name:<br>
+			<input type="text" name="name">
+			<br>
+			Cost modifier:<br>
+			<input type="number" name="cost" value="1">
+			<p>By default spells cost 50gp per level to scribe. This value modifies that, so a cost modifier of .5 would mean 25gp per level, while a modifier of 2 would mean 100 per level.</p>
+			Time modifier:<br>
+			<input type="number" name="time" value="1">
+			<p>By default spells tale 1 hour per level to scribe. This field allows you to modify that.</p>
+			Flat time:<br>
+			<input type="number" name="fixedTime">
+			<p>This field will set a fixed time (in minutes) to scribe spells regardless of level. If used this overrides the time modifier field.</p>
+			Max Spell Level:<br>
+			<input type="number" name="maxLevel" value="9">
+		</div>
+		<button class="button-toggle" data-target="#spell-list">Toggle Spell List</button>
+		<div id="spell-list">
+
+		</div>
+	</div>
+	<div id="spellbook-comparison-container" class="container">
+		<h2>Spellbook Comparison</h2>
+		<div id="spellbook-comparison"></div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="scripts/spells.js"></script>
+	<script src="scripts/global.js"></script>
+</body>
+</html>
